@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScript Sample</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vanilla JavaScript Sample</h1>
+        
+        <!-- Missing alt attribute -->
+        <img src="logo.png">
+        
+        <!-- Missing form label -->
+        <input type="text" placeholder="Enter your name">
+        
+        <!-- Color contrast issue -->
+        <p style="color: #cccccc;">Low contrast text</p>
+        
+        <!-- Missing heading structure -->
+        <h3>Subheading</h3>
+        <h1>Another main heading</h1>
+        
+        <!-- Missing button type -->
+        <button>Click me</button>
+        
+        <!-- Missing ARIA attributes -->
+        <div role="button">Custom button</div>
+        
+        <div id="app">
+            <div class="counter">
+                <h2>Counter: <span id="count">0</span></h2>
+                <button id="increment">Increment</button>
+                <button id="decrement">Decrement</button>
+            </div>
+            
+            <div class="todo">
+                <h2>Todo List</h2>
+                <input type="text" id="todoInput" placeholder="Add new todo">
+                <button id="addTodo">Add</button>
+                <ul id="todoList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+</body>
+</html> 

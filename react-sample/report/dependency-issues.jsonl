@@ -1,0 +1,14 @@
+{"type":"unused_dependency","package":"react-dom","file":"react-dom","severity":"low","message":"Unused dependency: react-dom","recommendation":"Remove react-dom from package.json if not needed"}
+{"type":"unused_dependency","package":"react-router-dom","file":"react-router-dom","severity":"low","message":"Unused dependency: react-router-dom","recommendation":"Remove react-router-dom from package.json if not needed"}
+{"type":"unused_dependency","package":"axios","file":"axios","severity":"low","message":"Unused dependency: axios","recommendation":"Remove axios from package.json if not needed"}
+{"type":"unused_dependency","package":"lodash","file":"lodash","severity":"low","message":"Unused dependency: lodash","recommendation":"Remove lodash from package.json if not needed"}
+{"type":"unused_dev_dependency","package":"react-scripts","file":"react-scripts","severity":"low","message":"Unused dev dependency: react-scripts","recommendation":"Remove react-scripts from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"@types/react","file":"@types/react","severity":"low","message":"Unused dev dependency: @types/react","recommendation":"Remove @types/react from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"@types/react-dom","file":"@types/react-dom","severity":"low","message":"Unused dev dependency: @types/react-dom","recommendation":"Remove @types/react-dom from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint","file":"eslint","severity":"low","message":"Unused dev dependency: eslint","recommendation":"Remove eslint from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint-plugin-react","file":"eslint-plugin-react","severity":"low","message":"Unused dev dependency: eslint-plugin-react","recommendation":"Remove eslint-plugin-react from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint-plugin-react-hooks","file":"eslint-plugin-react-hooks","severity":"low","message":"Unused dev dependency: eslint-plugin-react-hooks","recommendation":"Remove eslint-plugin-react-hooks from devDependencies if not needed"}
+{"type":"missing_node_modules","severity":"high","message":"node_modules directory not found","recommendation":"Run npm install to install dependencies"}
+{"type":"large_dependency","package":"lodash","severity":"low","message":"Large dependency detected: lodash","recommendation":"Consider using lighter alternatives or tree-shaking"}
+{"type":"large_dependency","package":"react-dom","severity":"low","message":"Large dependency detected: react-dom","recommendation":"Consider using lighter alternatives or tree-shaking"}
+{"type":"missing_license","severity":"medium","message":"No license specified in package.json","recommendation":"Add a license field to package.json"}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-07-11T02:20:34.844Z",
+  "totalIssues": 1,
+  "highSeverity": 0,
+  "mediumSeverity": 1,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "missing_landmark",
+      "severity": "medium",
+      "message": "No landmark roles (<main>, <nav>, <aside>, <header>, <footer>) found in project",
+      "recommendation": "Add semantic landmark elements for better accessibility",
+      "source": "custom"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-07-11T02:14:44.341Z",
+  "totalIssues": 3,
+  "highSeverity": 2,
+  "mediumSeverity": 1,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "hardcoded_secret",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+      "line": 21,
+      "severity": "high",
+      "message": "Potential hardcoded secret detected",
+      "code": "const apiKey = 'sk-1234567890abcdef';",
+      "context": "    19: \n    20: // Hardcoded secret for security testing\n\u001b[31m>>>\u001b[39m 21: const apiKey = 'sk-1234567890abcdef';\n    22: const password = 'admin123';\n    23: ",
+      "source": "custom"
+    },
+    {
+      "type": "hardcoded_secret",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+      "line": 22,
+      "severity": "high",
+      "message": "Potential hardcoded secret detected",
+      "code": "const password = 'admin123';",
+      "context": "    20: // Hardcoded secret for security testing\n    21: const apiKey = 'sk-1234567890abcdef';\n\u001b[31m>>>\u001b[39m 22: const password = 'admin123';\n    23: \n    24: // Unsafe eval usage",
+      "source": "custom"
+    },
+    {
+      "type": "eslint_security",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+      "line": 26,
+      "severity": "medium",
+      "message": "eval with argument of type Identifier",
+      "ruleId": "security/detect-eval-with-expression",
+      "code": "eval(userInput);",
+      "context": "    24: // Unsafe eval usage\n    25: const userInput = 'alert(\"xss\")';\n>>> 26: eval(userInput);\n    27: \n    28: // SQL injection vulnerability",
+      "source": "eslint"
+    }
+  ]
+}

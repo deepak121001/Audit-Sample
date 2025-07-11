@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-07-11T02:14:44.398Z",
+  "totalIssues": 2,
+  "highSeverity": 0,
+  "mediumSeverity": 2,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "tab_order_focus",
+      "file": "src/index.js",
+      "line": 35,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "res.send(`<div>${userInput}</div>`);",
+      "context": "    33: app.get('/xss', (req, res) => {\n    34: const userInput = req.query.input;\n>>> 35: res.send(`<div>${userInput}</div>`);\n    36: });",
+      "source": "custom"
+    },
+    {
+      "type": "missing_landmark",
+      "severity": "medium",
+      "message": "No landmark roles (<main>, <nav>, <aside>, <header>, <footer>) found in project",
+      "recommendation": "Add semantic landmark elements for better accessibility",
+      "source": "custom"
+    }
+  ]
+}

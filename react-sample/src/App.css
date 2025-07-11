@@ -1,0 +1,76 @@
+/* Intentional Stylelint issues for testing */
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+/* Missing semicolon */
+.App-logo {
+  height: 40vmin
+}
+
+/* Invalid color value */
+.invalid-color {
+  color: #gggggg;
+}
+
+/* Duplicate property */
+.duplicate {
+  color: red;
+  color: blue;
+}
+
+/* Missing unit */
+.no-unit {
+  margin: 10;
+}
+
+/* Missing space after colon */
+.no-space {
+  color:red;
+}
+
+/* Trailing whitespace */
+.trailing-whitespace {
+  color: red;  
+}
+
+/* Invalid hex color */
+.invalid-hex {
+  background-color: #12345;
+}
+
+/* Missing quotes around font family */
+.no-quotes {
+  font-family: Arial, sans-serif;
+}
+
+/* Invalid property value */
+.invalid-value {
+  display: invalid-value;
+}
+
+/* Empty rule */
+.empty-rule {
+}
+
+/* Duplicate selector */
+.duplicate-selector {
+  color: red;
+}
+.duplicate-selector {
+  color: blue;
+} 

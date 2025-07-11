@@ -1,0 +1,97 @@
+{
+  "timestamp": "2025-07-11T02:19:37.830Z",
+  "totalIssues": 9,
+  "highSeverity": 2,
+  "mediumSeverity": 7,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "missing_alt",
+      "file": "src/App.js",
+      "line": 50,
+      "severity": "high",
+      "message": "Image missing alt attribute or has empty alt",
+      "code": "<img src=\"logo.png\" />",
+      "context": "    48: {/* Missing alt attribute */}\n    49: <img src=\"logo.png\" />\n>>> 50: \n    51: {/* Missing form label */}",
+      "source": "custom"
+    },
+    {
+      "type": "missing_form_label",
+      "file": "src/App.js",
+      "line": 53,
+      "severity": "high",
+      "message": "Form control missing proper labeling",
+      "code": "<input type=\"text\" placeholder=\"Enter text\" />",
+      "context": "    51: {/* Missing form label */}\n    52: <input type=\"text\" placeholder=\"Enter text\" />\n>>> 53: \n    54: {/* Color contrast issue */}",
+      "source": "custom"
+    },
+    {
+      "type": "keyboard_navigation",
+      "file": "src/App.js",
+      "line": 45,
+      "severity": "medium",
+      "message": "Click handler without keyboard support",
+      "code": "<button onClick={handleClick}>",
+      "context": "    43: <h1>React Sample App</h1>\n    44: <p>Count: {count}</p>\n>>> 45: <button onClick={handleClick}>\n    46: Increment\n    47: </button>",
+      "recommendation": "Add keyboard event handlers or use semantic HTML elements",
+      "source": "custom"
+    },
+    {
+      "type": "tab_order_focus",
+      "file": "src/App.js",
+      "line": 41,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "<div className=\"App\">",
+      "context": "    39: return (\n    40: <div className=\"App\">\n>>> 41: <header className=\"App-header\">\n    42: <h1>React Sample App</h1>",
+      "source": "custom"
+    },
+    {
+      "type": "tab_order_focus",
+      "file": "src/App.js",
+      "line": 45,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "<button onClick={handleClick}>",
+      "context": "    43: <h1>React Sample App</h1>\n    44: <p>Count: {count}</p>\n>>> 45: <button onClick={handleClick}>\n    46: Increment\n    47: </button>",
+      "source": "custom"
+    },
+    {
+      "type": "tab_order_focus",
+      "file": "src/App.js",
+      "line": 53,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "<input type=\"text\" placeholder=\"Enter text\" />",
+      "context": "    51: {/* Missing form label */}\n    52: <input type=\"text\" placeholder=\"Enter text\" />\n>>> 53: \n    54: {/* Color contrast issue */}",
+      "source": "custom"
+    },
+    {
+      "type": "tab_order_focus",
+      "file": "src/App.js",
+      "line": 60,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "<div>{item}</div>",
+      "context": "    58: {/* List without proper structure */}\n    59: {items.map(item => (\n>>> 60: <div>{item}</div>\n    61: ))}",
+      "source": "custom"
+    },
+    {
+      "type": "tab_order_focus",
+      "file": "src/App.js",
+      "line": 64,
+      "severity": "medium",
+      "message": "Interactive element may be missing tabindex or focus management",
+      "code": "<div>",
+      "context": "    62: {data && (\n    63: <div>\n>>> 64: <h2>Data loaded</h2>\n    65: <pre>{JSON.stringify(data, null, 2)}</pre>",
+      "source": "custom"
+    },
+    {
+      "type": "missing_skip_link",
+      "severity": "medium",
+      "message": "No skip link found (e.g., <a href=\"#main-content\">Skip to main content</a>)",
+      "recommendation": "Add a skip link for keyboard users",
+      "source": "custom"
+    }
+  ]
+}

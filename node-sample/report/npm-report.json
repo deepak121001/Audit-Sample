@@ -1,0 +1,87 @@
+{
+  "dependencies": [
+    {
+      "name": "express",
+      "version": "5.1.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/express/-/express-5.1.0.tgz",
+      "description": "Fast, unopinionated, minimalist web framework",
+      "unpackedSize": "192.40 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "cors",
+      "version": "2.8.5",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/cors/-/cors-2.8.5.tgz",
+      "description": "Node.js CORS middleware",
+      "unpackedSize": "19.52 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "helmet",
+      "version": "8.1.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/helmet/-/helmet-8.1.0.tgz",
+      "description": "help secure Express/Connect apps with various HTTP headers",
+      "unpackedSize": "101.25 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "dotenv",
+      "version": "17.2.0",
+      "license": "BSD-2-Clause",
+      "download": "https://registry.npmjs.org/dotenv/-/dotenv-17.2.0.tgz",
+      "description": "Loads environment variables from .env file",
+      "unpackedSize": "78.13 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "bcryptjs",
+      "version": "3.0.2",
+      "license": "BSD-3-Clause",
+      "download": "https://registry.npmjs.org/bcryptjs/-/bcryptjs-3.0.2.tgz",
+      "description": "Optimized bcrypt in plain JavaScript with zero dependencies, with TypeScript support. Compatible to 'bcrypt'.",
+      "unpackedSize": "109.62 MB",
+      "deprecated": "Not deprecated"
+    }
+  ],
+  "devDependencies": [
+    {
+      "name": "nodemon",
+      "version": "3.1.10",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/nodemon/-/nodemon-3.1.10.tgz",
+      "description": "Simple monitor script for use during development of a Node.js app.",
+      "unpackedSize": "213.75 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "jest",
+      "version": "30.0.4",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/jest/-/jest-30.0.4.tgz",
+      "description": "Delightful JavaScript Testing.",
+      "unpackedSize": "6.17 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "eslint",
+      "version": "9.30.1",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/eslint/-/eslint-9.30.1.tgz",
+      "description": "An AST-based pattern checker for JavaScript.",
+      "unpackedSize": "2882.45 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "eslint-config-node",
+      "version": "4.1.0",
+      "license": "ISC",
+      "download": "https://registry.npmjs.org/eslint-config-node/-/eslint-config-node-4.1.0.tgz",
+      "description": "Pluggable eslint config for Node.js that you can import, extend and override",
+      "unpackedSize": "6.84 MB",
+      "deprecated": "Not deprecated"
+    }
+  ]
+}

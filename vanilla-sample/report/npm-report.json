@@ -1,0 +1,51 @@
+{
+  "dependencies": [
+    {
+      "name": "lodash",
+      "version": "4.17.21",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+      "description": "Lodash modular utilities.",
+      "unpackedSize": "1379.31 MB",
+      "deprecated": "Not deprecated"
+    }
+  ],
+  "devDependencies": [
+    {
+      "name": "live-server",
+      "version": "1.2.2",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/live-server/-/live-server-1.2.2.tgz",
+      "description": "simple development http server with live reload capability",
+      "unpackedSize": "52.45 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "webpack",
+      "version": "5.100.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/webpack/-/webpack-5.100.0.tgz",
+      "description": "Packs ECMAScript/CommonJs/AMD modules for the browser. Allows you to split your codebase into multiple bundles, which can be loaded on demand. Supports loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.",
+      "unpackedSize": "5284.97 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "webpack-cli",
+      "version": "6.0.1",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/webpack-cli/-/webpack-cli-6.0.1.tgz",
+      "description": "CLI for webpack & friends",
+      "unpackedSize": "106.99 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "eslint",
+      "version": "9.30.1",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/eslint/-/eslint-9.30.1.tgz",
+      "description": "An AST-based pattern checker for JavaScript.",
+      "unpackedSize": "2882.45 MB",
+      "deprecated": "Not deprecated"
+    }
+  ]
+}

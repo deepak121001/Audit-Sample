@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-07-11T02:20:34.764Z",
+  "totalIssues": 1,
+  "positivePractices": 0,
+  "highSeverity": 1,
+  "mediumSeverity": 0,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "no_test_files",
+      "severity": "high",
+      "message": "No test files or folders found. Test case not written.",
+      "recommendation": "Create test files in __tests__, test, or tests folders, or use .test.js/.spec.js/.test.ts file naming."
+    }
+  ]
+}

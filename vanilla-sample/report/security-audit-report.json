@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-07-11T02:20:34.808Z",
+  "totalIssues": 5,
+  "highSeverity": 3,
+  "mediumSeverity": 2,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "type": "hardcoded_secret",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/vanilla-sample/src/index.js",
+      "line": 13,
+      "severity": "high",
+      "message": "Potential hardcoded secret detected",
+      "code": "const apiKey = 'sk-1234567890abcdef';",
+      "context": "    11: \n    12: // Hardcoded secret for security testing\n\u001b[31m>>>\u001b[39m 13: const apiKey = 'sk-1234567890abcdef';\n    14: \n    15: // Unsafe eval usage",
+      "source": "custom"
+    },
+    {
+      "type": "eslint_security",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/vanilla-sample/src/index.js",
+      "line": 17,
+      "severity": "medium",
+      "message": "eval with argument of type Identifier",
+      "ruleId": "security/detect-eval-with-expression",
+      "code": "eval(userInput);",
+      "context": "    15: // Unsafe eval usage\n    16: const userInput = 'alert(\"xss\")';\n>>> 17: eval(userInput);\n    18: \n    19: // XSS vulnerability",
+      "source": "eslint"
+    },
+    {
+      "type": "eslint_security",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/vanilla-sample/src/index.js",
+      "line": 21,
+      "severity": "high",
+      "message": "Unsafe assignment to innerHTML (Variable 'input' declared as function parameter, which is considered unsafe. 'FunctionDeclaration' at 20:0)",
+      "ruleId": "no-unsanitized/property",
+      "code": "  document.getElementById('output').innerHTML = input;",
+      "context": "    19: // XSS vulnerability\n    20: function displayUserInput(input) {\n>>> 21:   document.getElementById('output').innerHTML = input;\n    22: }\n    23: ",
+      "source": "eslint"
+    },
+    {
+      "type": "eslint_security",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/vanilla-sample/src/index.js",
+      "line": 126,
+      "severity": "high",
+      "message": "Unsafe assignment to innerHTML (Variable 'content' declared as function parameter, which is considered unsafe. 'FunctionDeclaration' at 125:0)",
+      "ruleId": "no-unsanitized/property",
+      "code": "  document.getElementById('userContent').innerHTML = content;",
+      "context": "    124: // Security vulnerability - innerHTML usage\n    125: function displayUserContent(content) {\n>>> 126:   document.getElementById('userContent').innerHTML = content;\n    127: }\n    128: ",
+      "source": "eslint"
+    },
+    {
+      "type": "eslint_security",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/vanilla-sample/src/index.js",
+      "line": 136,
+      "severity": "medium",
+      "message": "Generic Object Injection Sink",
+      "ruleId": "security/detect-object-injection",
+      "code": "  return obj[prop];",
+      "context": "    134: // Unsafe object access\n    135: function getProperty(obj, prop) {\n>>> 136:   return obj[prop];\n    137: }\n    138: ",
+      "source": "eslint"
+    }
+  ]
+}

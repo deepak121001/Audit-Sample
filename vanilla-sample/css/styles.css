@@ -1,0 +1,173 @@
+/* Intentional Stylelint issues for testing */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Missing semicolon */
+.counter {
+  background: white
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Invalid color value */
+.invalid-color {
+  color: #gggggg;
+}
+
+/* Duplicate property */
+.duplicate {
+  color: red;
+  color: blue;
+}
+
+/* Missing unit */
+.no-unit {
+  margin: 10;
+}
+
+/* Missing space after colon */
+.no-space {
+  color:red;
+}
+
+/* Trailing whitespace */
+.trailing-whitespace {
+  color: red;  
+}
+
+/* Invalid hex color */
+.invalid-hex {
+  background-color: #12345;
+}
+
+/* Missing quotes around font family */
+.no-quotes {
+  font-family: Arial, sans-serif;
+}
+
+/* Invalid property value */
+.invalid-value {
+  display: invalid-value;
+}
+
+/* Empty rule */
+.empty-rule {
+}
+
+/* Duplicate selector */
+.duplicate-selector {
+  color: red;
+}
+.duplicate-selector {
+  color: blue;
+}
+
+.todo {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Color contrast issue */
+.low-contrast {
+  color: #cccccc;
+  background-color: #ffffff;
+}
+
+/* Missing focus styles */
+button:focus {
+  outline: none;
+}
+
+/* Inconsistent spacing */
+.inconsistent {
+  margin:10px;
+  padding: 20px;
+}
+
+/* Missing vendor prefixes */
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Invalid media query */
+@media (invalid-query) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* Missing closing brace */
+.incomplete {
+  color: red;
+  background: blue
+
+/* Nested rule without proper nesting */
+.nested {
+  color: red;
+}
+.nested .child {
+  color: blue;
+} 

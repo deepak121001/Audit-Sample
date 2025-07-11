@@ -1,0 +1,123 @@
+{
+  "dependencies": [
+    {
+      "name": "express",
+      "version": "5.1.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/express/-/express-5.1.0.tgz",
+      "description": "Fast, unopinionated, minimalist web framework",
+      "unpackedSize": "192.40 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "axios",
+      "version": "1.10.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/axios/-/axios-1.10.0.tgz",
+      "description": "Promise based HTTP client for the browser and node.js",
+      "unpackedSize": "2114.38 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+      "description": "Lodash modular utilities.",
+      "unpackedSize": "1379.31 MB",
+      "deprecated": "Not deprecated"
+    }
+  ],
+  "devDependencies": [
+    {
+      "name": "@types/node",
+      "version": "24.0.13",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@types/node/-/node-24.0.13.tgz",
+      "description": "TypeScript definitions for node",
+      "unpackedSize": "2340.59 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "@types/express",
+      "version": "5.0.3",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@types/express/-/express-5.0.3.tgz",
+      "description": "TypeScript definitions for express",
+      "unpackedSize": "7.40 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "@types/lodash",
+      "version": "4.17.20",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@types/lodash/-/lodash-4.17.20.tgz",
+      "description": "TypeScript definitions for lodash",
+      "unpackedSize": "848.68 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "typescript",
+      "version": "5.8.3",
+      "license": "Apache-2.0",
+      "download": "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "unpackedSize": "22331.74 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "ts-node",
+      "version": "10.9.2",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz",
+      "description": "TypeScript execution environment and REPL for node.js, with source map support",
+      "unpackedSize": "739.58 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "jest",
+      "version": "30.0.4",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/jest/-/jest-30.0.4.tgz",
+      "description": "Delightful JavaScript Testing.",
+      "unpackedSize": "6.17 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "@types/jest",
+      "version": "30.0.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@types/jest/-/jest-30.0.0.tgz",
+      "description": "TypeScript definitions for jest",
+      "unpackedSize": "74.24 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "eslint",
+      "version": "9.30.1",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/eslint/-/eslint-9.30.1.tgz",
+      "description": "An AST-based pattern checker for JavaScript.",
+      "unpackedSize": "2882.45 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.36.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.36.0.tgz",
+      "description": "TypeScript plugin for ESLint",
+      "unpackedSize": "1954.77 MB",
+      "deprecated": "Not deprecated"
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.36.0",
+      "license": "MIT",
+      "download": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.36.0.tgz",
+      "description": "An ESLint custom parser which leverages TypeScript ESTree",
+      "unpackedSize": "14.00 MB",
+      "deprecated": "Not deprecated"
+    }
+  ]
+}

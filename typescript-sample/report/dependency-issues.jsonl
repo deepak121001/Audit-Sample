@@ -1,0 +1,10 @@
+{"type":"unused_dev_dependency","package":"@types/node","file":"@types/node","severity":"low","message":"Unused dev dependency: @types/node","recommendation":"Remove @types/node from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"ts-node","file":"ts-node","severity":"low","message":"Unused dev dependency: ts-node","recommendation":"Remove ts-node from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"jest","file":"jest","severity":"low","message":"Unused dev dependency: jest","recommendation":"Remove jest from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"@types/jest","file":"@types/jest","severity":"low","message":"Unused dev dependency: @types/jest","recommendation":"Remove @types/jest from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint","file":"eslint","severity":"low","message":"Unused dev dependency: eslint","recommendation":"Remove eslint from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"@typescript-eslint/eslint-plugin","file":"@typescript-eslint/eslint-plugin","severity":"low","message":"Unused dev dependency: @typescript-eslint/eslint-plugin","recommendation":"Remove @typescript-eslint/eslint-plugin from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"@typescript-eslint/parser","file":"@typescript-eslint/parser","severity":"low","message":"Unused dev dependency: @typescript-eslint/parser","recommendation":"Remove @typescript-eslint/parser from devDependencies if not needed"}
+{"type":"missing_node_modules","severity":"high","message":"node_modules directory not found","recommendation":"Run npm install to install dependencies"}
+{"type":"large_dependency","package":"lodash","severity":"low","message":"Large dependency detected: lodash","recommendation":"Consider using lighter alternatives or tree-shaking"}
+{"type":"missing_license","severity":"medium","message":"No license specified in package.json","recommendation":"Add a license field to package.json"}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Code Insight - Sample Projects Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .report-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .report-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+        }
+        .status-available {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .status-unavailable {
+            background-color: #fef2f2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <svg width="40" height="40" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#2563eb"><circle cx="256" cy="256" r="256"/></g>
+                    <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="24" font-family="Arial" dy=".3em">UI</text>
+                </svg>
+                <h1 class="text-4xl font-bold text-blue-700">UI Code Insight</h1>
+            </div>
+            <p class="text-xl text-gray-600">Sample Projects Reports Dashboard</p>
+            <p class="text-sm text-gray-500 mt-2">Generated reports for testing different project types</p>
+        </header>
+
+        <!-- Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- React Sample -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-blue-600 text-white p-6">
+                    <h2 class="text-2xl font-bold mb-2">React Sample</h2>
+                    <p class="text-blue-100">React project with intentional ESLint and Stylelint issues</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="status-badge status-available">Available</span>
+                        <span class="text-sm text-gray-500 ml-2">React + CSS</span>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="react-sample/report/index.html" target="_blank" 
+                           class="block w-full bg-blue-50 hover:bg-blue-100 text-blue-700 font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                            📊 View Dashboard
+                        </a>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <a href="react-sample/report/eslint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                ESLint Report
+                            </a>
+                            <a href="react-sample/report/stylelint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Stylelint Report
+                            </a>
+                            <a href="react-sample/report/security-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Security Audit
+                            </a>
+                            <a href="react-sample/report/accessibility-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Accessibility
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Node.js Sample -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-green-600 text-white p-6">
+                    <h2 class="text-2xl font-bold mb-2">Node.js Sample</h2>
+                    <p class="text-green-100">Express server with security vulnerabilities and ESLint issues</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="status-badge status-available">Available</span>
+                        <span class="text-sm text-gray-500 ml-2">Node.js + Express</span>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="node-sample/report/index.html" target="_blank" 
+                           class="block w-full bg-green-50 hover:bg-green-100 text-green-700 font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                            📊 View Dashboard
+                        </a>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <a href="node-sample/report/eslint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                ESLint Report
+                            </a>
+                            <a href="node-sample/report/stylelint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Stylelint Report
+                            </a>
+                            <a href="node-sample/report/security-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Security Audit
+                            </a>
+                            <a href="node-sample/report/performance-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Performance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vanilla JavaScript Sample -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-purple-600 text-white p-6">
+                    <h2 class="text-2xl font-bold mb-2">Vanilla JS Sample</h2>
+                    <p class="text-purple-100">Pure JavaScript with accessibility and Stylelint issues</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="status-badge status-available">Available</span>
+                        <span class="text-sm text-gray-500 ml-2">Vanilla JS + HTML + CSS</span>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="vanilla-sample/report/index.html" target="_blank" 
+                           class="block w-full bg-purple-50 hover:bg-purple-100 text-purple-700 font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                            📊 View Dashboard
+                        </a>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <a href="vanilla-sample/report/eslint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                ESLint Report
+                            </a>
+                            <a href="vanilla-sample/report/stylelint-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Stylelint Report
+                            </a>
+                            <a href="vanilla-sample/report/accessibility-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Accessibility
+                            </a>
+                            <a href="vanilla-sample/report/security-audit-report.json" target="_blank" 
+                               class="block bg-gray-50 hover:bg-gray-100 text-gray-700 py-2 px-3 rounded text-center transition-colors">
+                                Security
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="mt-12 bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Quick Links</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">📋 Documentation</h4>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li><a href="README.md" target="_blank" class="hover:text-blue-600">Sample Projects Guide</a></li>
+                        <li><a href="test-samples.js" target="_blank" class="hover:text-blue-600">Test Script</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">🔧 Project Files</h4>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li><a href="react-sample/src/App.js" target="_blank" class="hover:text-blue-600">React App.js</a></li>
+                        <li><a href="node-sample/src/index.js" target="_blank" class="hover:text-blue-600">Node.js index.js</a></li>
+                        <li><a href="vanilla-sample/src/index.js" target="_blank" class="hover:text-blue-600">Vanilla JS index.js</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">📦 Package Files</h4>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li><a href="react-sample/package.json" target="_blank" class="hover:text-blue-600">React package.json</a></li>
+                        <li><a href="node-sample/package.json" target="_blank" class="hover:text-blue-600">Node.js package.json</a></li>
+                        <li><a href="vanilla-sample/package.json" target="_blank" class="hover:text-blue-600">Vanilla JS package.json</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report Statistics -->
+        <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Report Statistics</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-blue-600">3</div>
+                    <div class="text-sm text-gray-600">Sample Projects</div>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-green-600">15+</div>
+                    <div class="text-sm text-gray-600">Report Types</div>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-purple-600">50+</div>
+                    <div class="text-sm text-gray-600">Intentional Issues</div>
+                </div>
+                <div class="bg-yellow-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-yellow-600">100%</div>
+                    <div class="text-sm text-gray-600">Test Coverage</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>UI Code Insight - Sample Projects Reports Dashboard</p>
+            <p class="mt-1">Generated for testing and demonstration purposes</p>
+        </footer>
+    </div>
+
+    <script src="navigation.js"></script>
+    <script>
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click tracking for analytics (if needed)
+            const links = document.querySelectorAll('a[target="_blank"]');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Report accessed:', this.href);
+                });
+            });
+
+            // Add hover effects for cards
+            const cards = document.querySelectorAll('.bg-white');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add export functionality
+            const exportBtn = document.createElement('button');
+            exportBtn.textContent = '📊 Export Project Data';
+            exportBtn.className = 'bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors';
+            exportBtn.addEventListener('click', () => {
+                if (window.samplesNavigation) {
+                    window.samplesNavigation.exportProjectData();
+                }
+            });
+
+            // Add export button to the page
+            const quickLinks = document.querySelector('.bg-white.rounded-lg.shadow-lg.p-6');
+            if (quickLinks) {
+                const exportContainer = document.createElement('div');
+                exportContainer.className = 'mt-4 text-center';
+                exportContainer.appendChild(exportBtn);
+                quickLinks.appendChild(exportContainer);
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-07-11T02:19:37.824Z",
+  "totalIssues": 2,
+  "highSeverity": 0,
+  "mediumSeverity": 0,
+  "lowSeverity": 2,
+  "issues": [
+    {
+      "type": "large_dependency",
+      "package": "lodash",
+      "severity": "low",
+      "message": "Large dependency detected: lodash",
+      "recommendation": "Consider using lighter alternatives or tree-shaking",
+      "source": "custom"
+    },
+    {
+      "type": "unused_code",
+      "file": "/Users/deepaksharma/projects/ui-code-insight/samples/react-sample/src/App.js",
+      "line": 34,
+      "severity": "low",
+      "message": "Unused variable or import detected",
+      "ruleId": "no-unused-vars",
+      "code": "    const unusedVar = 'this is unused';",
+      "context": "    32:     setCount(count + 1);\n    33:     // Unused variable\n>>> 34:     const unusedVar = 'this is unused';\n    35:   };\n    36:   ",
+      "source": "eslint"
+    }
+  ]
+}

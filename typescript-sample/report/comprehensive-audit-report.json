@@ -1,0 +1,287 @@
+{
+  "timestamp": "2025-07-11T02:17:46.977Z",
+  "duration": 2077,
+  "summary": {
+    "totalIssues": 22,
+    "highSeverity": 1,
+    "mediumSeverity": 3,
+    "lowSeverity": 18,
+    "positivePractices": 0
+  },
+  "categories": {
+    "security": {
+      "timestamp": "2025-07-11T02:17:46.887Z",
+      "totalIssues": 1,
+      "highSeverity": 0,
+      "mediumSeverity": 1,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "eslint_security",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 27,
+          "severity": "medium",
+          "message": "eval with argument of type Identifier",
+          "ruleId": "security/detect-eval-with-expression",
+          "code": "eval(userInput);",
+          "context": "    25: // Unsafe eval usage\n    26: const userInput = 'alert(\"xss\")';\n>>> 27: eval(userInput);\n    28: \n    29: // XSS vulnerability",
+          "source": "eslint"
+        }
+      ]
+    },
+    "performance": {
+      "timestamp": "2025-07-11T02:17:46.976Z",
+      "totalIssues": 18,
+      "highSeverity": 0,
+      "mediumSeverity": 0,
+      "lowSeverity": 18,
+      "issues": [
+        {
+          "type": "large_dependency",
+          "package": "lodash",
+          "severity": "low",
+          "message": "Large dependency detected: lodash",
+          "recommendation": "Consider using lighter alternatives or tree-shaking",
+          "source": "custom"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 3,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "import _ from 'lodash';",
+          "context": "    1: import express from 'express';\n    2: import axios from 'axios';\n>>> 3: import _ from 'lodash';\n    4: \n    5: // Intentional TypeScript/ESLint issues for testing",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 8,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "import { unused } from 'lodash';",
+          "context": "    6: \n    7: // Unused import\n>>> 8: import { unused } from 'lodash';\n    9: \n    10: // Any type usage",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 11,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const anyValue: any = 'test';",
+          "context": "    9: \n    10: // Any type usage\n>>> 11: const anyValue: any = 'test';\n    12: \n    13: // Missing type annotation",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 14,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const untypedVar = 'test';",
+          "context": "    12: \n    13: // Missing type annotation\n>>> 14: const untypedVar = 'test';\n    15: \n    16: // Unused variable",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 17,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const unusedVar = 'this is unused';",
+          "context": "    15: \n    16: // Unused variable\n>>> 17: const unusedVar = 'this is unused';\n    18: \n    19: // Console.log statements",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 23,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const apiKey: string = 'sk-1234567890abcdef';",
+          "context": "    21: \n    22: // Hardcoded secret for security testing\n>>> 23: const apiKey: string = 'sk-1234567890abcdef';\n    24: \n    25: // Unsafe eval usage",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 51,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "app.get('/api/test', (req, res, next) => {",
+          "context": "    49: \n    50: // Unused parameter\n>>> 51: app.get('/api/test', (req, res, next) => {\n    52:   res.json({ message: 'test' });\n    53: });",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 56,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "async function fetchData() {",
+          "context": "    54: \n    55: // Missing await\n>>> 56: async function fetchData() {\n    57:   const response = axios.get('https://api.example.com/data');\n    58:   return response.data;",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 62,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const unsafeRegex = /^[a-zA-Z0-9]+$/;",
+          "context": "    60: \n    61: // Unsafe regex\n>>> 62: const unsafeRegex = /^[a-zA-Z0-9]+$/;\n    63: \n    64: // Inconsistent spacing",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 65,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const spacingTest='test';",
+          "context": "    63: \n    64: // Inconsistent spacing\n>>> 65: const spacingTest='test';\n    66: \n    67: // Unreachable code",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 68,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function unreachable(): string {",
+          "context": "    66: \n    67: // Unreachable code\n>>> 68: function unreachable(): string {\n    69:   return 'test';\n    70:   console.log('This will never execute');",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 74,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function riskyFunction() {",
+          "context": "    72: \n    73: // Missing try-catch\n>>> 74: function riskyFunction() {\n    75:   const result = JSON.parse('invalid json');\n    76:   return result;",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 80,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function noReturnType() {",
+          "context": "    78: \n    79: // No explicit return type\n>>> 80: function noReturnType() {\n    81:   return 'test';\n    82: }",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 85,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function processData(data: any) {",
+          "context": "    83: \n    84: // Using any in function parameter\n>>> 85: function processData(data: any) {\n    86:   return data;\n    87: }",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 90,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function processUser(user: { name?: string }) {",
+          "context": "    88: \n    89: // Missing null check\n>>> 90: function processUser(user: { name?: string }) {\n    91:   return user.name.toUpperCase();\n    92: }",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 95,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "interface UnusedInterface {",
+          "context": "    93: \n    94: // Unused interface\n>>> 95: interface UnusedInterface {\n    96:   name: string;\n    97:   age: number;",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/typescript-sample/src/index.ts",
+          "line": 101,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function strictNullCheck(value: string | null) {",
+          "context": "    99: \n    100: // Missing strict null checks\n>>> 101: function strictNullCheck(value: string | null) {\n    102:   return value.toUpperCase();\n    103: }",
+          "source": "eslint"
+        }
+      ]
+    },
+    "accessibility": {
+      "timestamp": "2025-07-11T02:17:46.948Z",
+      "totalIssues": 2,
+      "highSeverity": 0,
+      "mediumSeverity": 2,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "tab_order_focus",
+          "file": "src/index.ts",
+          "line": 33,
+          "severity": "medium",
+          "message": "Interactive element may be missing tabindex or focus management",
+          "code": "res.send(`<div>${userInput}</div>`);",
+          "context": "    31: app.get('/xss', (req, res) => {\n    32: const userInput = req.query.input as string;\n>>> 33: res.send(`<div>${userInput}</div>`);\n    34: });",
+          "source": "custom"
+        },
+        {
+          "type": "missing_landmark",
+          "severity": "medium",
+          "message": "No landmark roles (<main>, <nav>, <aside>, <header>, <footer>) found in project",
+          "recommendation": "Add semantic landmark elements for better accessibility",
+          "source": "custom"
+        }
+      ]
+    },
+    "testing": {
+      "timestamp": "2025-07-11T02:17:46.620Z",
+      "totalIssues": 1,
+      "positivePractices": 0,
+      "highSeverity": 1,
+      "mediumSeverity": 0,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "no_test_files",
+          "severity": "high",
+          "message": "No test files or folders found. Test case not written.",
+          "recommendation": "Create test files in __tests__, test, or tests folders, or use .test.js/.spec.js/.test.ts file naming."
+        }
+      ]
+    },
+    "dependency": {
+      "timestamp": "2025-07-11T02:17:46.614Z",
+      "totalIssues": 0,
+      "highSeverity": 0,
+      "mediumSeverity": 0,
+      "lowSeverity": 0,
+      "issues": []
+    }
+  }
+}

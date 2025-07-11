@@ -1,0 +1,2 @@
+{"type":"missing_landmark","severity":"medium","message":"No landmark roles (<main>, <nav>, <aside>, <header>, <footer>) found in project","recommendation":"Add semantic landmark elements for better accessibility","source":"custom"}
+{"type":"missing_skip_link","severity":"medium","message":"No skip link found (e.g., <a href=\"#main-content\">Skip to main content</a>)","recommendation":"Add a skip link for keyboard users","source":"custom"}

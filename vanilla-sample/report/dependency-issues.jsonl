@@ -1,0 +1,7 @@
+{"type":"unused_dependency","package":"lodash","file":"lodash","severity":"low","message":"Unused dependency: lodash","recommendation":"Remove lodash from package.json if not needed"}
+{"type":"unused_dev_dependency","package":"live-server","file":"live-server","severity":"low","message":"Unused dev dependency: live-server","recommendation":"Remove live-server from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"webpack-cli","file":"webpack-cli","severity":"low","message":"Unused dev dependency: webpack-cli","recommendation":"Remove webpack-cli from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint","file":"eslint","severity":"low","message":"Unused dev dependency: eslint","recommendation":"Remove eslint from devDependencies if not needed"}
+{"type":"missing_node_modules","severity":"high","message":"node_modules directory not found","recommendation":"Run npm install to install dependencies"}
+{"type":"large_dependency","package":"lodash","severity":"low","message":"Large dependency detected: lodash","recommendation":"Consider using lighter alternatives or tree-shaking"}
+{"type":"missing_license","severity":"medium","message":"No license specified in package.json","recommendation":"Add a license field to package.json"}

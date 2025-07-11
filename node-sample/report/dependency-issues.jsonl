@@ -1,0 +1,7 @@
+{"type":"unused_dependency","package":"bcryptjs","file":"bcryptjs","severity":"low","message":"Unused dependency: bcryptjs","recommendation":"Remove bcryptjs from package.json if not needed"}
+{"type":"unused_dev_dependency","package":"nodemon","file":"nodemon","severity":"low","message":"Unused dev dependency: nodemon","recommendation":"Remove nodemon from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"jest","file":"jest","severity":"low","message":"Unused dev dependency: jest","recommendation":"Remove jest from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint","file":"eslint","severity":"low","message":"Unused dev dependency: eslint","recommendation":"Remove eslint from devDependencies if not needed"}
+{"type":"unused_dev_dependency","package":"eslint-config-node","file":"eslint-config-node","severity":"low","message":"Unused dev dependency: eslint-config-node","recommendation":"Remove eslint-config-node from devDependencies if not needed"}
+{"type":"missing_node_modules","severity":"high","message":"node_modules directory not found","recommendation":"Run npm install to install dependencies"}
+{"type":"missing_license","severity":"medium","message":"No license specified in package.json","recommendation":"Add a license field to package.json"}

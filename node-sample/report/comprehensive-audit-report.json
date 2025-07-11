@@ -1,0 +1,244 @@
+{
+  "timestamp": "2025-07-11T02:14:44.423Z",
+  "duration": 3362,
+  "summary": {
+    "totalIssues": 18,
+    "highSeverity": 3,
+    "mediumSeverity": 3,
+    "lowSeverity": 12,
+    "positivePractices": 0
+  },
+  "categories": {
+    "security": {
+      "timestamp": "2025-07-11T02:14:44.341Z",
+      "totalIssues": 3,
+      "highSeverity": 2,
+      "mediumSeverity": 1,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "hardcoded_secret",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 21,
+          "severity": "high",
+          "message": "Potential hardcoded secret detected",
+          "code": "const apiKey = 'sk-1234567890abcdef';",
+          "context": "    19: \n    20: // Hardcoded secret for security testing\n\u001b[31m>>>\u001b[39m 21: const apiKey = 'sk-1234567890abcdef';\n    22: const password = 'admin123';\n    23: ",
+          "source": "custom"
+        },
+        {
+          "type": "hardcoded_secret",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 22,
+          "severity": "high",
+          "message": "Potential hardcoded secret detected",
+          "code": "const password = 'admin123';",
+          "context": "    20: // Hardcoded secret for security testing\n    21: const apiKey = 'sk-1234567890abcdef';\n\u001b[31m>>>\u001b[39m 22: const password = 'admin123';\n    23: \n    24: // Unsafe eval usage",
+          "source": "custom"
+        },
+        {
+          "type": "eslint_security",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 26,
+          "severity": "medium",
+          "message": "eval with argument of type Identifier",
+          "ruleId": "security/detect-eval-with-expression",
+          "code": "eval(userInput);",
+          "context": "    24: // Unsafe eval usage\n    25: const userInput = 'alert(\"xss\")';\n>>> 26: eval(userInput);\n    27: \n    28: // SQL injection vulnerability",
+          "source": "eslint"
+        }
+      ]
+    },
+    "performance": {
+      "timestamp": "2025-07-11T02:14:44.422Z",
+      "totalIssues": 12,
+      "highSeverity": 0,
+      "mediumSeverity": 0,
+      "lowSeverity": 12,
+      "issues": [
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 12,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const unusedVar = 'this is unused';",
+          "context": "    10: \n    11: // Unused variable\n>>> 12: const unusedVar = 'this is unused';\n    13: \n    14: // Missing semicolon",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 15,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const missingSemicolon = 'test'",
+          "context": "    13: \n    14: // Missing semicolon\n>>> 15: const missingSemicolon = 'test'\n    16: \n    17: // Console.log statements",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 21,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const apiKey = 'sk-1234567890abcdef';",
+          "context": "    19: \n    20: // Hardcoded secret for security testing\n>>> 21: const apiKey = 'sk-1234567890abcdef';\n    22: const password = 'admin123';\n    23: ",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 22,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const password = 'admin123';",
+          "context": "    20: // Hardcoded secret for security testing\n    21: const apiKey = 'sk-1234567890abcdef';\n>>> 22: const password = 'admin123';\n    23: \n    24: // Unsafe eval usage",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 30,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const sql = `SELECT * FROM users WHERE name = '${userQuery}'`;",
+          "context": "    28: // SQL injection vulnerability\n    29: const userQuery = req.body.query;\n>>> 30: const sql = `SELECT * FROM users WHERE name = '${userQuery}'`;\n    31: \n    32: // XSS vulnerability",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 53,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "app.get('/api/test', (req, res, next) => {",
+          "context": "    51: \n    52: // Unused parameter\n>>> 53: app.get('/api/test', (req, res, next) => {\n    54:   res.json({ message: 'test' });\n    55: });",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 58,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "async function fetchData() {",
+          "context": "    56: \n    57: // Missing await\n>>> 58: async function fetchData() {\n    59:   const response = fetch('https://api.example.com/data');\n    60:   return response.json();",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 64,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const unsafeRegex = /^[a-zA-Z0-9]+$/;",
+          "context": "    62: \n    63: // Unsafe regex\n>>> 64: const unsafeRegex = /^[a-zA-Z0-9]+$/;\n    65: \n    66: // Missing strict mode",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 67,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const strictModeTest = 'test';",
+          "context": "    65: \n    66: // Missing strict mode\n>>> 67: const strictModeTest = 'test';\n    68: \n    69: // Inconsistent spacing",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 70,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "const spacingTest='test';",
+          "context": "    68: \n    69: // Inconsistent spacing\n>>> 70: const spacingTest='test';\n    71: \n    72: // Unreachable code",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 73,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function unreachable() {",
+          "context": "    71: \n    72: // Unreachable code\n>>> 73: function unreachable() {\n    74:   return 'test';\n    75:   console.log('This will never execute');",
+          "source": "eslint"
+        },
+        {
+          "type": "unused_code",
+          "file": "/Users/deepaksharma/projects/ui-code-insight/samples/node-sample/src/index.js",
+          "line": 79,
+          "severity": "low",
+          "message": "Unused variable or import detected",
+          "ruleId": "no-unused-vars",
+          "code": "function riskyFunction() {",
+          "context": "    77: \n    78: // Missing try-catch\n>>> 79: function riskyFunction() {\n    80:   const result = JSON.parse('invalid json');\n    81:   return result;",
+          "source": "eslint"
+        }
+      ]
+    },
+    "accessibility": {
+      "timestamp": "2025-07-11T02:14:44.398Z",
+      "totalIssues": 2,
+      "highSeverity": 0,
+      "mediumSeverity": 2,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "tab_order_focus",
+          "file": "src/index.js",
+          "line": 35,
+          "severity": "medium",
+          "message": "Interactive element may be missing tabindex or focus management",
+          "code": "res.send(`<div>${userInput}</div>`);",
+          "context": "    33: app.get('/xss', (req, res) => {\n    34: const userInput = req.query.input;\n>>> 35: res.send(`<div>${userInput}</div>`);\n    36: });",
+          "source": "custom"
+        },
+        {
+          "type": "missing_landmark",
+          "severity": "medium",
+          "message": "No landmark roles (<main>, <nav>, <aside>, <header>, <footer>) found in project",
+          "recommendation": "Add semantic landmark elements for better accessibility",
+          "source": "custom"
+        }
+      ]
+    },
+    "testing": {
+      "timestamp": "2025-07-11T02:14:43.679Z",
+      "totalIssues": 1,
+      "positivePractices": 0,
+      "highSeverity": 1,
+      "mediumSeverity": 0,
+      "lowSeverity": 0,
+      "issues": [
+        {
+          "type": "no_test_files",
+          "severity": "high",
+          "message": "No test files or folders found. Test case not written.",
+          "recommendation": "Create test files in __tests__, test, or tests folders, or use .test.js/.spec.js/.test.ts file naming."
+        }
+      ]
+    },
+    "dependency": {
+      "timestamp": "2025-07-11T02:14:43.665Z",
+      "totalIssues": 0,
+      "highSeverity": 0,
+      "mediumSeverity": 0,
+      "lowSeverity": 0,
+      "issues": []
+    }
+  }
+}
